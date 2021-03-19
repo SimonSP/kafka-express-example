@@ -1,10 +1,10 @@
 # ENTORNO DE EJEMPLO PARA COMUNICAR DOS SERVICIOS MEDIANTE APACHE KAFKA
 
-- Necesitas tener una instalacion de npm o yarn junto con Docker y Docker-compose instalado en tu computadora para poder ejecutar la instalacion de los servicios necesarios para levantar una instancia de confluent con kafka
+- Necesitas tener una instalacion de npm o yarn junto con Docker y Docker-compose instalado en tu computadora para poder ejecutar la instalacion de los servicios necesarios para levantar una instancia de Confluent y Kafka
 
 - Clonar el repositorio, dirigirse a la raiz de cada servidor y ejecutar: `npm install` o `yarn install` en caso de usar YARN
 
-- Ejecuta `docker-compose up -d` en la raiz servidor productor
+- Ejecuta `docker-compose up -d` en la raiz del servidor productor
 
 - El comando anterior instalara todos los servicios definidos en el `docker-compose.yml` y creara
   un contenedor que levantara una instancia dockerizada de Apache Kafka.
@@ -30,4 +30,4 @@
 
 `{ "topic": "users-info", "version": 1, "subject": "users-info-value", "message": { "email": "nadia@email.com", "isNew": true, "message": null } }`
 
-- Verifica la recepcion del mensaje en el servidor consumir y en confluence en la seccion topics/users-info/messages
+- Verifica la recepcion del mensaje en el servidor consumidor y en confluence en la seccion topics/users-info/messages
